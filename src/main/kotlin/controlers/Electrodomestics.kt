@@ -7,16 +7,16 @@ import models.Televisio
 
 fun main() {
     val electrodomestics = arrayOf(
-        Electrodomestic(35, "blanc", "D", 9),
-        Electrodomestic(35, "platejat", "E", 49),
+        Electrodomestic(45, "blanc", "D", 35),
+        Electrodomestic(100, "platejat", "G", 49),
         Electrodomestic(35, "blanc", "F", 5),
-        Electrodomestic(35, "platejat", "A", 66),
-        Electrodomestic(35, "blanc", "B", 99),
-        Electrodomestic(35, "platejat", "C", 121),
-        Rentadora(400, 5),
-        Rentadora(250, 8),
-        Televisio(320, 52),
-        Televisio(130, 28),
+        Electrodomestic(55, "platejat", "A", 50),
+        Electrodomestic(75, "blanc", "B", 99),
+        Electrodomestic(135, "platejat", "C", 199),
+        Rentadora(410, 5),
+        Rentadora(270, 8),
+        Televisio(310, 52),
+        Televisio(150, 28),
     )
 
     for (electrodomestic in electrodomestics) {

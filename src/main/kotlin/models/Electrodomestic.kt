@@ -8,14 +8,15 @@ class Electrodomestic {
     private var consum: String = "G"
     private var pes: Int = 5
 
-    constructor(preuBase: Int, color: String, consum: String, pes:Int) {
+    constructor(preuBase: Int, color: String, consum: String, pes: Int) {
         this.color = color
         this.preuBase = preuBase
         this.consum = consum
         this.pes = pes
     }
+
     fun consum() {
-       /* val lletraUsuari = readWord("Introdueix la lletra:", "Has d'escollir una lletra A-G.")*/
+        /* val lletraUsuari = readWord("Introdueix la lletra:", "Has d'escollir una lletra A-G.")*/
 
         consum = when (consum.toUpperCase()) {
             "A" -> 35.toString()
@@ -30,10 +31,11 @@ class Electrodomestic {
                 0
             }).toString()
         }
+    }
 
 
-        fun pes() {
-            /*val pesUsuari = readInt(
+    fun pes() {
+        /*val pesUsuari = readInt(
                 "Introdueix el pes:",
                 "Has d'introduir un pes (Enter)",
                 "Introdueix un valor numeric enter",
@@ -41,67 +43,71 @@ class Electrodomestic {
                 1000
             )*/
 
-            pes = when (pes) {
-                in 0..5 -> 0
-                in 6..20 -> 20
-                in 21..50 -> 50
-                in 51..80 -> 80
-                in 81..1000 -> 100
-                else -> {
-                    println("${RED_BOLD}Pes fora dels llindars vàlids.${RESET}")
-                    -1 // Qualsevol valor que indiqui un rang no vàlid
-                }
+        pes = when (pes) {
+            in 0..5 -> 0
+            in 6..20 -> 20
+            in 21..50 -> 50
+            in 51..80 -> 80
+            in 81..1000 -> 100
+            else -> {
+                println("${RED_BOLD}Pes fora dels llindars vàlids.${RESET}")
+                -1 // Qualsevol valor que indiqui un rang no vàlid
             }
-        }
-
-        fun color() {
-            color = when (color.toLowerCase()) {
-                "blanc", "platejat" -> color
-                else -> {
-                    println("${RED_BOLD}Error: Color no vàlid. S'utilitzar el color predeterminat: Blanc.${RESET}")
-                    "blanc"
-                }
-            }
-        }
-
-        fun preuFinal(): Int {
-            var preuFinal = preuBase
-
-            preuFinal += when (consum) {
-                "A" -> 35
-                "B" -> 30
-                "C" -> 25
-                "D" -> 20
-                "E" -> 15
-                "F" -> 10
-                "G" -> 0
-                else -> 0
-            }
-
-            preuFinal += when (pes) {
-                in 0..5 -> 0
-                in 6..20 -> 20
-                in 21..50 -> 50
-                in 51..80 -> 80
-                in 81..120 -> 100
-                else -> {
-                    println("${RED_BOLD}El pes es troba fora del llindar màxim!.${RESET}")
-                    5
-                }
-            }
-            return preuFinal
         }
     }
+
+    fun color() {
+        color = when (color.toLowerCase()) {
+            "blanc", "platejat" -> color
+            else -> {
+                println("${RED_BOLD}Error: Color no vàlid. S'utilitzar el color predeterminat: Blanc.${RESET}")
+                "blanc"
+            }
+        }
+    }
+
+    fun preuFinal(): Int {
+        var preuFinal = preuBase
+
+        preuFinal += when (consum) {
+            "A" -> 35
+            "B" -> 30
+            "C" -> 25
+            "D" -> 20
+            "E" -> 15
+            "F" -> 10
+            "G" -> 0
+            else -> 0
+        }
+
+        preuFinal += when (pes) {
+            in 0..5 -> 0
+            in 6..20 -> 20
+            in 21..50 -> 50
+            in 51..80 -> 80
+            in 81..120 -> 100
+            else -> {
+                println("${RED_BOLD}El pes es troba fora del llindar màxim!.${RESET}")
+                5
+            }
+        }
+        return preuFinal
+    }
+
     fun getPreuBase(): Int {
         return preuBase
     }
+
     fun getColor(): String {
         return color
     }
+
     fun getConsum(): String {
         return consum
     }
+
     fun getPes(): Int {
         return pes
     }
 }
+
