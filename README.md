@@ -14,9 +14,9 @@ Este proyecto simula una tienda de electrodomésticos con la capacidad de gestio
 
 ## UML
 
-1. [Imagen1]([url_imagen1](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.58.png))
-2. [Imagen2](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.55.png)
-3. [Imagen3](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.54.png)
+1. [Imagen1]()
+2. [Imagen2]()
+3. [Imagen3](Screen Shot 04-02-2024 at 19.55.png)
 
 ## Main
 
