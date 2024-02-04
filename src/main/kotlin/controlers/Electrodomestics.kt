@@ -1,20 +1,49 @@
 package controlers
+
 import models.Electrodomestic
 import models.Rentadora
 import models.Televisio
 
+
 fun main() {
     val electrodomestics = arrayOf(
-        Electrodomestic("blanc", "G", 30),
-        Electrodomestic("Nevera", 500.0, "Gris", 40),
-        Electrodomestic("Aspiradora", 150.0, "Vermell", 5),
-        Electrodomestic("Rentadora", 200.0, "Blau", 8),
-        Electrodomestic("Televisió", 700.0, "Negre", 15),
-        Electrodomestic("Microones", 100.0, "Platejat", 10),
-        Rentadora(250),
-        Rentadora(200),
-        Televisio(55),
-        Televisio(70)
+        Electrodomestic(35, "blanc", "D", 9),
+        Electrodomestic(35, "platejat", "E", 49),
+        Electrodomestic(35, "blanc", "F", 5),
+        Electrodomestic(35, "platejat", "A", 66),
+        Electrodomestic(35, "blanc", "B", 99),
+        Electrodomestic(35, "platejat", "C", 121),
+        Rentadora(400, 5),
+        Rentadora(250, 8),
+        Televisio(320, 52),
+        Televisio(130, 28),
     )
-}
 
+    for (electrodomestic in electrodomestics) {
+        when (electrodomestic) {
+            is Electrodomestic -> {
+                println("Electrodomèstic:")
+                println("Preu base: ${electrodomestic.getPreuBase()}€")
+                println("Color: ${electrodomestic.getColor()}")
+                println("Consum: ${electrodomestic.getConsum()}")
+                println("Pes: ${electrodomestic.getPes()}kg")
+                println("Preu Final: ${electrodomestic.preuFinal()}€")
+            }
+
+            is Rentadora -> {
+                println("Rentadora:")
+                println("Preu base: ${electrodomestic.getPreuBase()}€")
+                println("Càrrega: ${electrodomestic.getCarrega()}kg")
+                println("Preu final: ${electrodomestic.preuFinal()}€")
+            }
+
+            is Televisio -> {
+                println("Televisió:")
+                println("Preu base: ${electrodomestic.getPreuBase()}€")
+                println("Mida: ${electrodomestic.getMida()}\"")
+                println("Preu final: ${electrodomestic.preuFinal()}€")
+            }
+        }
+        println()
+    }
+}
