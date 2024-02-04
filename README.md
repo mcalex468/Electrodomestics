@@ -3,7 +3,7 @@
 Aquest projecte simula una tenda d'electrodomestics amb una capacitat de gestionar diferents productes de la mateixa categoria, electronics per dir-ho així. Podeu veure per sobre el que inclou.
 
 ## MENU
-1. [Main](#uml)
+1. [UML](#uml)
 2. [Main](#main)
 3. [Clase Electrodomestic](#clase-electrodomestic)
 4. [Clase Televisio](#clase-televisio)
