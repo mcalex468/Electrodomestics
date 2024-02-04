@@ -1,5 +1,8 @@
 package controlers
 
+import extensions.GREEN_BOLD
+import extensions.RED_BOLD
+import extensions.RESET
 import models.Electrodomestic
 import models.Rentadora
 import models.Televisio
@@ -19,31 +22,58 @@ fun main() {
         Televisio(150, 28),
     )
 
-    for (electrodomestic in electrodomestics) {
-        when (electrodomestic) {
+    var precioBaseTotalE = 0.0
+    var precioFinalTotalE = 0.0
+
+    var precioBaseTotalR = 0.0
+    var precioFinalTotalR = 0.0
+
+    var precioBaseTotalT = 0.0
+    var precioFinalTotalT = 0.0
+
+    for (objecte in electrodomestics) {
+        when (objecte) {
             is Electrodomestic -> {
                 println("Electrodomèstic:")
-                println("Preu base: ${electrodomestic.getPreuBase()}€")
-                println("Color: ${electrodomestic.getColor()}")
-                println("Consum: ${electrodomestic.getConsum()}")
-                println("Pes: ${electrodomestic.getPes()}kg")
-                println("Preu Final: ${electrodomestic.preuFinal()}€")
+                println("Preu base: ${objecte.getPreuBase()}€")
+                println("Color: ${objecte.getColor()}")
+                println("Consum: ${objecte.getConsum()}")
+                println("Pes: ${objecte.getPes()}kg")
+                println("Preu Final: ${objecte.preuFinal()}€")
+                precioBaseTotalE += objecte.getPreuBase()
+                precioFinalTotalE += objecte.preuFinal()
             }
 
             is Rentadora -> {
                 println("Rentadora:")
-                println("Preu base: ${electrodomestic.getPreuBase()}€")
-                println("Càrrega: ${electrodomestic.getCarrega()}kg")
-                println("Preu final: ${electrodomestic.preuFinal()}€")
+                println("Preu base: ${objecte.getPreuBase()}€")
+                println("Carrega: ${objecte.getCarrega()}kg")
+                println("Preu final: ${objecte.preuFinal()}€")
+                precioBaseTotalR += objecte.getPreuBase()
+                precioFinalTotalR += objecte.preuFinal()
             }
 
             is Televisio -> {
                 println("Televisió:")
-                println("Preu base: ${electrodomestic.getPreuBase()}€")
-                println("Mida: ${electrodomestic.getMida()}\"")
-                println("Preu final: ${electrodomestic.preuFinal()}€")
+                println("Preu base: ${objecte.getPreuBase()}€")
+                println("Mida: ${objecte.getMida()}")
+                println("Preu final: ${objecte.preuFinal()}€")
+                precioBaseTotalT += objecte.getPreuBase()
+                precioFinalTotalT += objecte.preuFinal()
             }
+
         }
         println()
     }
+    println("Total Electrodomestics:")
+    println("Preu base total:${RED_BOLD}$precioBaseTotalE€${RESET}")
+    println("Preu final total: ${GREEN_BOLD}$precioFinalTotalE€${RESET}")
+    println()
+    println("Total Rentadora:")
+    println("Preu base total: ${RED_BOLD}$precioBaseTotalR€${RESET}")
+    println("Preu final total: ${GREEN_BOLD}$precioFinalTotalR€${RESET}")
+    println()
+    println("Total Televisió:")
+    println("Preu base total: ${RED_BOLD}$precioBaseTotalT€${RESET}")
+    println("Preu final total:  ${GREEN_BOLD}$precioFinalTotalT€${RESET}")
 }
