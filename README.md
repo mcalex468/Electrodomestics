@@ -20,51 +20,50 @@ Aquest projecte simula una tenda d'electrodomestics amb una capacitat de gestion
 
 ## Main
 
-El punto de entrada principal del programa se encuentra en la función `main`. En este bloque, se crea un array de objetos que incluye instancias de las clases `Electrodomestic`, `Televisio` y `Rentadora`. Luego, se realiza un bucle para imprimir los detalles de cada objeto y calcular los totales para cada categoría.
+El punt d'entrada principal del programa es troba a la funció `main`. En aquest bloc, es crea un array d'objectes que inclou instàncies de les classes `Electrodomèstic`, `Televisió` i `Rentadora`. Després, es realitza un bucle per imprimir els detalls de cada objecte i calcular els totals per a cada categoria.
 
-Además, se calcula el precio total y se muestra al final del bucle.
-
+A més a més, es calcula el preu total i es mostra al final del bucle.
 ---
 
 ## Clase Electrodomestic
 
-Esta clase modela un electrodoméstico genérico con características como precio base, color, consumo energético y peso. Además, se incluyen métodos para calcular el precio final y obtener detalles específicos del electrodoméstico.
+Aquesta classe modela un electrodomèstic genèric amb característiques com ara preu base, color, consum energètic i pes. A més a més, s'inclouen mètodes per calcular el preu final i obtenir detalls específics de l'electrodomèstic.
 
 ### Métodes Principals:
 
-- `preuFinal()`: Calcula el precio final del electrodoméstico teniendo en cuenta el consumo y el peso.
-- `getPreuBase()`: Obtiene el precio base del electrodoméstico.
-- `getColor()`: Obtiene el color del electrodoméstico.
-- `getConsum()`: Obtiene el nivel de consumo del electrodoméstico.
-- `getPes()`: Obtiene el peso del electrodoméstico.
+- `preuFinal()`: Calcula el preu final del electrodoméstic tenint en compte el consum i pes.
+- `getPreuBase()`: Obte el preu base del electrodoméstic.
+- `getColor()`: Obte el color del electrodoméstic.
+- `getConsum()`: Obte el nivell de consum del electrodoméstic.
+- `getPes()`: Obte el pes del electrodoméstic.
 
 ### Métodes Adicionals:
 
-- `consum()`: Convierte la letra de consumo en un valor numérico según un rango predefinido.
-- `pes()`: Ajusta el peso del electrodoméstico a un rango específico.
-- `color()`: Establece el color del electrodoméstico, limitándolo a blanco o plateado.
+- `consum()`: Converteix la lletra de consum en un valor numéric segons un rang predefinit.
+- `pes()`: Ajusta el pes del electrodoméstic a un rang específic.
+- `color()`: Estableix el color del electrodoméstic, limitant-lo a blanc o platejat.
 
 ---
 
 ## Clase Televisió
 
-Esta clase representa un televisor con atributos como precio base y tamaño en pulgadas. Se proporcionan métodos para obtener el precio base y el tamaño, así como para calcular el precio final.
+Aquesta classe representa un televisor amb atributs com ara el preu base i la mida en polzades. Es proporcionen mètodes per obtenir el preu base i la mida, així com per calcular el preu final.
 
 ### Métodes Principals:
 
-- `preuFinal()`: Calcula el precio final del televisor basándose en su tamaño.
-- `getPreuBase()`: Obtiene el precio base del televisor.
-- `getMida()`: Obtiene el tamaño del televisor en pulgadas.
+- `preuFinal()`: Calcula el preu final del televisor basant-se en el seu tamany.
+- `getPreuBase()`: Obte el preu base del televisor.
+- `getMida()`: Obte la mida del televisor en polsades.
 
 ## Clase Rentadora
 
-La clase Rentadora modela una lavadora con atributos como precio base y capacidad de carga en kilogramos. Se incluyen métodos para obtener la capacidad de carga, el precio base y calcular el precio final.
+La classe Rentadora modela una rentadora amb atributs com ara el preu base i la capacitat de càrrega en quilograms. S'inclouen mètodes per obtenir la capacitat de càrrega, el preu base i calcular el preu final.
 
 ### Métodes Principals:
 
-- `preuFinal()`: Calcula el precio final de la lavadora según su capacidad de carga.
-- `getCarrega()`: Obtiene la capacidad de carga de la lavadora.
-- `getPreuBase()`: Obtiene el precio base de la lavadora.
+- `preuFinal()`: Calcula el preu final de la rentadora segons la capacitat de càrrega.
+- `getCarrega()`: Obté la capacitat de càrrega de la rentadora.
+- `getPreuBase()`: Obte el preu base de la rentadora.
 
 
 ## Package Controllers
