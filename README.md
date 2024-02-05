@@ -14,9 +14,9 @@ Aquest projecte simula una tenda d'electrodomestics amb una capacitat de gestion
 
 ## UML
 
-1. [Imagen1](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.54.png)
-2. [Imagen2](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.55.png)
-3. [Imagen3](https://github.com/mcalex468/Electrodomestics/blob/master/Screen%20Shot%2004-02-2024%20at%2019.58.png)
+1. [Imagen1]([https://github.com/mcalex468/Electrodomestics/blob/master/src/Imagenes/Screen%20Shot%2004-02-2024%20at%2019.54.png])
+2. [Imagen2](https://github.com/mcalex468/Electrodomestics/blob/master/src/Imagenes/Screen%20Shot%2004-02-2024%20at%2019.55.png)
+3. [Imagen3](https://github.com/mcalex468/Electrodomestics/blob/master/src/Imagenes/Screen%20Shot%2004-02-2024%20at%2019.58.png)
 
 ## Main
 
