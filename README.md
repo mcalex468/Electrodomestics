@@ -6,7 +6,7 @@ Aquest projecte simula una tenda d'electrodomestics amb una capacitat de gestion
 1. [UML](#uml)
 2. [Main](#main)
 3. [Clase Electrodomestic](#clase-electrodomestic)
-4. [Clase Televisio](#clase-televisio)
+4. [Clase Televisió](#clase-televisio)
 5. [Clase Rentadora](#clase-rentadora)
 6. [Package controllers](#package-controllers)
 
@@ -30,7 +30,7 @@ Además, se calcula el precio total y se muestra al final del bucle.
 
 Esta clase modela un electrodoméstico genérico con características como precio base, color, consumo energético y peso. Además, se incluyen métodos para calcular el precio final y obtener detalles específicos del electrodoméstico.
 
-### Métodos Principales:
+### Métodes Principals:
 
 - `preuFinal()`: Calcula el precio final del electrodoméstico teniendo en cuenta el consumo y el peso.
 - `getPreuBase()`: Obtiene el precio base del electrodoméstico.
@@ -38,7 +38,7 @@ Esta clase modela un electrodoméstico genérico con características como preci
 - `getConsum()`: Obtiene el nivel de consumo del electrodoméstico.
 - `getPes()`: Obtiene el peso del electrodoméstico.
 
-### Métodos Adicionales:
+### Métodes Adicionals:
 
 - `consum()`: Convierte la letra de consumo en un valor numérico según un rango predefinido.
 - `pes()`: Ajusta el peso del electrodoméstico a un rango específico.
@@ -46,11 +46,11 @@ Esta clase modela un electrodoméstico genérico con características como preci
 
 ---
 
-## Clase Televisio
+## Clase Televisió
 
 Esta clase representa un televisor con atributos como precio base y tamaño en pulgadas. Se proporcionan métodos para obtener el precio base y el tamaño, así como para calcular el precio final.
 
-### Métodos Principales:
+### Métodes Principals:
 
 - `preuFinal()`: Calcula el precio final del televisor basándose en su tamaño.
 - `getPreuBase()`: Obtiene el precio base del televisor.
@@ -60,7 +60,7 @@ Esta clase representa un televisor con atributos como precio base y tamaño en p
 
 La clase Rentadora modela una lavadora con atributos como precio base y capacidad de carga en kilogramos. Se incluyen métodos para obtener la capacidad de carga, el precio base y calcular el precio final.
 
-### Métodos Principales:
+### Métodes Principals:
 
 - `preuFinal()`: Calcula el precio final de la lavadora según su capacidad de carga.
 - `getCarrega()`: Obtiene la capacidad de carga de la lavadora.
